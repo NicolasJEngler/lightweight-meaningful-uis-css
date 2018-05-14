@@ -94,6 +94,12 @@
         border-radius: 6px;
         overflow: hidden;
         padding: 15px 20px;
+
+        code {
+          &.max-height-450 {
+            max-height: 450px;
+          }
+        }
       }
 
       p {

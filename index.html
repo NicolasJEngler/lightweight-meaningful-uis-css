@@ -271,6 +271,87 @@
 				</section>
 
 				<section class="slides__slide">
+					<h1>Real-life movement</h1>
+
+					<p>With the <code class="inline" data-trim data-noescape>steps()</code> function a sort-of frame by frame animation can be achieved as well.</p>
+
+					<pre class="width-100 mt-30 code-intro"><code class="hlcss" data-trim data-noescape contenteditable>
+.popover {
+	transition: all .5s steps(5);
+	// Pretty handy when debugging complex animations
+}
+					</code></pre>
+
+					<video class="mt-15" width="392" height="310" controls autoplay loop>
+						<source src="videos/popover-steps.mov" type="video/mp4">
+						<source src="videos/popover-steps.ogv" type="video/ogg">
+						Your browser does not support the video tag.
+					</video>
+				</section>
+
+				<section class="slides__slide">
+					<h1>Everyday use cases</h1>
+
+					<p>A really simple way to have some other presets than the keywords we saw a couple of slides ago is to store some curve values in custom properties. My <code class="inline" data-trim data-noescape>easings.scss</code> file looks like this:</p>
+
+					<pre class="width-100 mt-30 code-intro"><code class="hlcss max-height-450" data-trim data-noescape contenteditable>
+:root {
+	/* Ease In */
+	--ease-in-quad: cubic-bezier(0.550, 0.085, 0.680, 0.530);
+	--ease-in-expo: cubic-bezier(0.950, 0.050, 0.795, 0.035);
+	--ease-in-quint: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+	--ease-in-quart: cubic-bezier(0.895, 0.030, 0.685, 0.220);
+	/* Ease Out */
+	--ease-out-quad: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+	--ease-out-expo: cubic-bezier(0.190, 1.000, 0.220, 1.000);
+	--ease-out-quint: cubic-bezier(0.230, 1.000, 0.320, 1.000);
+	--ease-out-quart: cubic-bezier(0.165, 0.840, 0.440, 1.000);
+	/* Ease In Out */
+	--ease-in-out-quad: cubic-bezier(0.455, 0.030, 0.515, 0.955);
+	--ease-in-out-expo: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+	--ease-in-out-quint: cubic-bezier(0.860, 0.000, 0.070, 1.000);
+	--ease-in-out-quart: cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+					</code></pre>
+
+					<aside class="notes">
+						This way I can call these values inside the transition or animation property by typing var(--ease-in-out-quart) for example.
+					</aside>
+				</section>
+
+				<section class="slides__slide">
+					<h1>Vanilla-CSS possibilities</h1>
+
+					<video class="mt-15" width="692" height="452" controls autoplay loop>
+						<source src="videos/xx-switcher-demo.mov" type="video/mp4">
+						<source src="videos/xx-switcher-demo.ogv" type="video/ogg">
+						Your browser does not support the video tag.
+					</video>
+
+					<a href="https://codepen.io/nicolasjengler/pen/LkzYQr" title="CodePen demo">https://codepen.io/nicolasjengler/pen/LkzYQr</a>
+
+					<aside class="notes">
+						The possibilities are endless, so go crazy and test it out until you feel comfortable with the result!
+					</aside>
+				</section>
+
+				<section class="slides__slide">
+					<h1>Vanilla-CSS possibilities</h1>
+
+					<video class="mt-15" width="692" height="452" controls autoplay loop>
+						<source src="videos/modal-demo.mov" type="video/mp4">
+						<source src="videos/modal-demo.ogv" type="video/ogg">
+						Your browser does not support the video tag.
+					</video>
+
+					<a href="https://codepen.io/nicolasjengler/pen/GpjzQj" title="CodePen demo">https://codepen.io/nicolasjengler/pen/GpjzQj</a>
+
+					<aside class="notes">
+						The possibilities are endless, so go crazy and test it out until you feel comfortable with the result!
+					</aside>
+				</section>
+
+				<section class="slides__slide">
 					<h1>Thank you!</h1>
 
 					<img src="images/thank-you.gif">

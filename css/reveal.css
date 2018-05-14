@@ -1262,6 +1262,8 @@ body {
       border-radius: 6px;
       overflow: hidden;
       padding: 15px 20px; }
+      .reveal .slides__slide pre code.max-height-450 {
+        max-height: 450px; }
     .reveal .slides__slide p {
       font-family: "PT Mono", monospace;
       font-weight: 400;
