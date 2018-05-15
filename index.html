@@ -69,7 +69,7 @@
 				<section class="slides__slide">
 					<h1>Animation nirvana<br> (without libraries)</h1>
 
-					<video width="564" height="432" controls autoplay loop>
+					<video width="564" height="432" controls loop>
 						<source src="videos/popover-animation.mp4" type="video/mp4">
 						<source src="videos/popover-animation.ogv" type="video/ogg">
 						Your browser does not support the video tag.
@@ -86,10 +86,6 @@
 
 				<section class="slides__slide">
 					<h1>Animation nirvana<br> (without libraries)</h1>
-
-					<p class="text-left">
-						CSS
-					</p>
 
 					<pre class="width-100 code-intro"><code class="hlcss" data-trim data-noescape contenteditable>
 .popover-wrapper {
@@ -127,7 +123,7 @@
 						Movement of objects in our world is rarely linear, most of them move with a certain variation in their motion and this happens because of different laws of physics, which is why objects in the web that move in a linear manner look odd or awkward.
 					</p>
 
-					<video class="mt-15" width="558" height="374" controls autoplay loop>
+					<video class="mt-15" width="558" height="374" controls loop>
 						<source src="videos/popover-easings.mp4" type="video/mp4">
 						<source src="videos/popover-easings.ogv" type="video/ogg">
 						Your browser does not support the video tag.
@@ -142,8 +138,6 @@
 					<h1>Real-life movement</h1>
 
 					<p>Transitions and animations can use timing functions, which basically are specifications for the speed curve of an animation. The speed curve is in charge of defining how an animation uses the defined time for the transition or animation. The following are possible timing functions:</p>
-
-					<p class="text-left">CSS</p>
 
 					<pre class="width-100 code-intro"><code class="hlcss" data-trim data-noescape contenteditable>
 .popover {
@@ -165,9 +159,7 @@
 				<section class="slides__slide">
 					<h1>Real-life movement</h1>
 
-					<p>For the previous demo, the popover on the right moved appeared awkwardly because the timing functions were the following:</p>
-
-					<p class="text-left mt-30">CSS</p>
+					<p>For the previous demo, the popover on the right moved and appeared a bit more awkward than the one on the left because their timing functions were the following:</p>
 
 					<pre class="width-100 code-intro"><code class="hlcss" data-trim data-noescape contenteditable>
 .popover {
@@ -183,7 +175,8 @@
 				<section class="slides__slide">
 					<h1>Real-life movement</h1>
 
-					<p>What exactly is a <code class="inline" data-trim data-noescape>cubic-bezier()</code> function and how does it work? Well, the function defines a Cubic Bezier curve which consists of four points: <code class="inline" data-trim data-noescape>x1, x2, y1, y2</code>. <code class="inline" data-trim data-noescape>x1</code> and <code class="inline" data-trim data-noescape>y1</code> define a start for the curve, ending in a position defined by <code class="inline" data-trim data-noescape>x2</code> and <code class="inline" data-trim data-noescape>y2</code></p>
+					<p>What exactly is a <code class="inline" data-trim data-noescape>cubic-bezier()</code> function and how does it work? Well, the function defines a Cubic Bezier curve which consists of four points: <code class="inline" data-trim data-noescape>x1, x2, y1, y2</code>. <code class="inline" data-trim data-noescape>x1</code> and <code class="inline" data-trim data-noescape>y1</code> define a start for the curve, ending in a position defined by <code class="inline" data-trim data-noescape>x2</code> and <code class="inline" data-trim data-noescape>y2</code>.</p>
+					<p>The Bezier curve is then in charge of managing the speed curve of a transition or animation in a more customizable manner compared to what we can do with keywords.</p>
 				</section>
 
 				<section class="slides__slide">
@@ -191,7 +184,7 @@
 
 					<p>Understanding how a Bezier Curve works for CSS without visualizing it can be really tricky. Lea Verou, a front-end developer, speaker and author, created a handy tool to test out different curves.</p>
 
-					<video class="mt-15" width="640" height="302" controls autoplay loop>
+					<video class="mt-15" width="640" height="302" controls loop>
 						<source src="videos/cubic-bezier.mov" type="video/mp4">
 						<source src="videos/cubic-bezier.ogv" type="video/ogg">
 						Your browser does not support the video tag.
@@ -215,7 +208,7 @@
 
 					<p><code class="inline" data-trim data-noescape>linear == cubic-bezier(0,0,1,1)</code></p>
 
-					<video class="mt-15" width="640" height="302" controls autoplay loop>
+					<video class="mt-15" width="640" height="302" controls loop>
 						<source src="videos/easing-linear.mov" type="video/mp4">
 						<source src="videos/easing-linear.ogv" type="video/ogg">
 						Your browser does not support the video tag.
@@ -227,7 +220,7 @@
 
 					<p><code class="inline" data-trim data-noescape>ease == cubic-bezier(.25,.1,.25,.1)</code></p>
 
-					<video class="mt-15" width="640" height="302" controls autoplay loop>
+					<video class="mt-15" width="640" height="302" controls loop>
 						<source src="videos/easing-ease.mov" type="video/mp4">
 						<source src="videos/easing-ease.ogv" type="video/ogg">
 						Your browser does not support the video tag.
@@ -239,7 +232,7 @@
 
 					<p><code class="inline" data-trim data-noescape>ease-in == cubic-bezier(.42,0,1,1)</code></p>
 
-					<video class="mt-15" width="640" height="302" controls autoplay loop>
+					<video class="mt-15" width="640" height="302" controls loop>
 						<source src="videos/easing-ease-in.mov" type="video/mp4">
 						<source src="videos/easing-ease-in.ogv" type="video/ogg">
 						Your browser does not support the video tag.
@@ -251,7 +244,7 @@
 
 					<p><code class="inline" data-trim data-noescape>ease-out == cubic-bezier(0,0,.58,1)</code></p>
 
-					<video class="mt-15" width="640" height="302" controls autoplay loop>
+					<video class="mt-15" width="640" height="302" controls loop>
 						<source src="videos/easing-ease-out.mov" type="video/mp4">
 						<source src="videos/easing-ease-out.ogv" type="video/ogg">
 						Your browser does not support the video tag.
@@ -263,7 +256,7 @@
 
 					<p><code class="inline" data-trim data-noescape>ease-in-out == cubic-bezier(.42,0,.58,1)</code></p>
 
-					<video class="mt-15" width="640" height="302" controls autoplay loop>
+					<video class="mt-15" width="640" height="302" controls loop>
 						<source src="videos/easing-ease-in-out.mov" type="video/mp4">
 						<source src="videos/easing-ease-in-out.ogv" type="video/ogg">
 						Your browser does not support the video tag.
@@ -273,20 +266,62 @@
 				<section class="slides__slide">
 					<h1>Real-life movement</h1>
 
-					<p>With the <code class="inline" data-trim data-noescape>steps()</code> function a sort-of frame by frame animation can be achieved as well.</p>
+					<p><code class="inline" data-trim data-noescape>steps()</code> can be used for a sort-of frame by frame animation.</p>
 
 					<pre class="width-100 mt-30 code-intro"><code class="hlcss" data-trim data-noescape contenteditable>
 .popover {
-	transition: all .5s steps(5);
-	// Pretty handy when debugging complex animations
+	transition: all .5s steps(5); // Handy for debugging
 }
 					</code></pre>
 
-					<video class="mt-15" width="392" height="310" controls autoplay loop>
+					<video class="mt-15" width="392" height="310" controls loop>
 						<source src="videos/popover-steps.mov" type="video/mp4">
 						<source src="videos/popover-steps.ogv" type="video/ogg">
 						Your browser does not support the video tag.
 					</video>
+
+					<a href="https://codepen.io/nicolasjengler/pen/aGjYYK" title="CodePen demo">https://codepen.io/nicolasjengler/pen/aGjYYK</a>
+				</section>
+
+				<section class="slides__slide">
+					<h1>Real-life movement</h1>
+
+					<p>There's also a possibility to stagger animations by using the <code class="inline" data-trim data-noescape>transition/animation-delay</code>  property as a separate property, or adding a defined amount of time at the end of the transition/animation shorthand property.</p>
+
+					<pre class="width-100 mt-30 code-intro"><code class="hlcss" data-trim data-noescape contenteditable>
+.popover {
+	transition: all .5s cubic-bezier(0.770, 0.000, 0.175, 1.000),
+		    color .5s ease-in .5s,
+		    letter-spacing .5s ease-in .3s;
+	transform: scale(1);
+	opacity: 1;
+	letter-spacing: 1px;
+	color: rgba(255,255,255,0);
+}
+
+.popover-wrapper:hover .popover {
+	transform: scale(1);
+	opacity: 1;
+	letter-spacing: 0;
+	color: white;
+}
+					</code></pre>
+				</section>
+
+				<section class="slides__slide">
+					<h1>Real-life movement</h1>
+
+					<video class="mt-15" width="500" height="400" controls loop>
+						<source src="videos/popover-staggered.mov" type="video/mp4">
+						<source src="videos/popover-staggered.ogv" type="video/ogg">
+						Your browser does not support the video tag.
+					</video>
+
+					<a href="https://codepen.io/nicolasjengler/pen/QrBKJV?editors=1100" title="CodePen demo">https://codepen.io/nicolasjengler/pen/QrBKJV?editors=1100</a>
+
+					<aside class="notes">
+						Here were delaying the change of the color value until all of the other properties are done (.5s), and we're also stalling the change of the letter-spacing property for .3s
+					</aside>
 				</section>
 
 				<section class="slides__slide">
@@ -322,7 +357,7 @@
 				<section class="slides__slide">
 					<h1>Vanilla-CSS possibilities</h1>
 
-					<video class="mt-15" width="692" height="452" controls autoplay loop>
+					<video class="mt-15" width="692" height="452" controls loop>
 						<source src="videos/xx-switcher-demo.mov" type="video/mp4">
 						<source src="videos/xx-switcher-demo.ogv" type="video/ogg">
 						Your browser does not support the video tag.
@@ -338,13 +373,45 @@
 				<section class="slides__slide">
 					<h1>Vanilla-CSS possibilities</h1>
 
-					<video class="mt-15" width="692" height="452" controls autoplay loop>
+					<video class="mt-15" width="692" height="452" controls loop>
 						<source src="videos/modal-demo.mov" type="video/mp4">
 						<source src="videos/modal-demo.ogv" type="video/ogg">
 						Your browser does not support the video tag.
 					</video>
 
 					<a href="https://codepen.io/nicolasjengler/pen/GpjzQj" title="CodePen demo">https://codepen.io/nicolasjengler/pen/GpjzQj</a>
+
+					<aside class="notes">
+						The possibilities are endless, so go crazy and test it out until you feel comfortable with the result!
+					</aside>
+				</section>
+
+				<section class="slides__slide">
+					<h1>Vanilla-CSS possibilities</h1>
+
+					<video class="mt-15" width="692" height="452" controls loop>
+						<source src="videos/dnd-demo.mov" type="video/mp4">
+						<source src="videos/dnd-demo.ogv" type="video/ogg">
+						Your browser does not support the video tag.
+					</video>
+
+					<a href="https://codepen.io/nicolasjengler/pen/XEorXM" title="CodePen demo">https://codepen.io/nicolasjengler/pen/XEorXM</a>
+
+					<aside class="notes">
+						The possibilities are endless, so go crazy and test it out until you feel comfortable with the result!
+					</aside>
+				</section>
+
+				<section class="slides__slide">
+					<h1>Vanilla-CSS possibilities</h1>
+
+					<video class="mt-15" width="692" height="452" controls loop>
+						<source src="videos/search-demo.mov" type="video/mp4">
+						<source src="videos/search-demo.ogv" type="video/ogg">
+						Your browser does not support the video tag.
+					</video>
+
+					<a href="https://codepen.io/nicolasjengler/pen/ZGqjGV" title="CodePen demo">https://codepen.io/nicolasjengler/pen/ZGqjGV</a>
 
 					<aside class="notes">
 						The possibilities are endless, so go crazy and test it out until you feel comfortable with the result!
