@@ -1,5 +1,5 @@
-# Life after modern layout properties
-## This is the repository of my talk proposal for CSSConf EU 2017
+# Lightweight and meaningful UIs with CSS
+## This is the repository of my talk proposal for CSSConf AR 2018
 
 This presentation is based on `reveal.js`. Check out their [repo](https://github.com/hakimel/reveal.js/) if you need to know anything other than the basic setup.
 
