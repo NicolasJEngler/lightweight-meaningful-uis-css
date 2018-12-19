@@ -3,7 +3,7 @@
 
 This presentation is based on `reveal.js`. Check out their [repo](https://github.com/hakimel/reveal.js/) if you need to know anything other than the basic setup.
 
-In this presentation we'll be looking at some of the new modules that are currently under development like: CSS Color Module Level 4, CSS Pseudo-Elements Module Level 4, CSS Text Module Level 4, CSS Text Decoration Module Level 3, and Selectors Level 4.
+In this presentation we'll be looking at how to create rich and meaningful UIs using CSS animations and transitions in order to avoid adding bloat to our codebase. CSS is pretty powerful on its own, which eliminates the need to import heavy libraries into our projects if all we want is a limited set of animations, all we need to do is think about a predefined set of rules for our animation styleguide and we're ready to go.
 
 ## Installation
 
